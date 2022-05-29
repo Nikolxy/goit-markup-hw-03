@@ -2,39 +2,56 @@
       --accent-color:#2196F3;
       --on-top-color:#FFFFFF;
       --h2-h3-color:#212121;
-      --p-a-color:#757575;
+      --p-a-color:#cab7b7;
 }
+h1,h2,h3,p{margin-bottom: 0;margin-top: 0;}
 
+ul,ol{margin-top: 0;margin-bottom: 0;padding-left: 0;}
+
+img{display: block;}
 .list{list-style: none;}
 .link{text-decoration: none;}
 
 body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
 }
+.container{width:1200px ;
+margin-left: auto;margin-right: auto;padding-left: 15px;padding-right: 15px;
+}
 
+.box-style:not(:last-child) {padding-right: 30px;margin-left: auto;margin-right: auto;}
+.hight-50px{margin-top: 50px;}
+.page-header-container{display: flex;align-items: center;justify-content: space-between}
 
-
-/*.logotype{}*/   
-.logo{
+.navigation-header{display: flex;align-items: center;}
+.page-header{padding-top: 24px;padding-bottom: 25px;}
+.logo{margin-right: 93px;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
     color:var(--accent-color);}
-
-
-/*.menu-list{}*/
+.logotype-span{font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color:black;
+}
+.menu-header{display: flex;}
+.menu-item:not(:last-child) {
+    margin-right: 50px;}
 .menu-link{
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--h2-h3-color);}
-
 .menu-link:hover,
 .menu-link:focus{color: var(--accent-color);}
 
-.page-header-link{
+.list-header{display: flex;}
+
+.page-header-link{margin-right: 50px;
     font-weight: 500;
     letter-spacing: 0.02em;
-     color:var(--p-a-color);}
+     color:var(--p-a-color); }
 
 .page-header-number{
     font-weight: 500;
@@ -47,9 +64,10 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
 .page-header-number:focus{color: var(--accent-color);}
 
 /*hero*/
-.hero-main{ background: #2F303A ;}
+.hero-main{ background: #2F303A ;box-sizing: border-box;height: 600px;}
 
-.hero-title{
+.hero-title{ margin-left: auto; margin-right: auto; 
+    box-sizing: content-box; width: 696px;height: 120px;padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.39;
@@ -58,13 +76,14 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
     text-transform: uppercase;
     color: var(--on-top-color);}
 
-.hero-main-btn{font-family: 'Roboto', sans-serif;
+.hero-main-item{display: flex; margin-top: 30px;}
+
+.hero-main-btn{font-family: 'Roboto', sans-serif;margin-left:auto;margin-right: auto;
+    padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     letter-spacing: 0.06em;
-    text-align: center;
     color: var(--on-top-color);background:var(--accent-color) ;
     cursor:pointer;}
 
@@ -73,15 +92,16 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
   
 
 
-/*.main-menu-list{}*/
+.main-menu-list{display: flex;box-sizing: border-box;
+flex-basis:calc(100%-30px)/4;}
 
-.main-menu-item{
+.main-menu-item{padding-top: 94px;width: 270px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--h2-h3-color);}
 
-.main-menu-sub-item{
+.main-menu-sub-item{padding-top: 10px;width: 270px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--p-a-color);}
@@ -90,8 +110,9 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
     /*======= work sample =======*/
 
 
+.work-sample{padding-top: 94px;}
+.work-sample-list{display: flex;}
 
-/*.work-sample{}*/
 .work-sample-title{
     font-weight: 700;
     font-size: 36px;
@@ -100,13 +121,20 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--h2-h3-color);}
 
-
    /*========= our team ==========*/
 
 
 
-/*.our-team{}*/
-.our-team-head{
+.our-team{margin-top: 94px;background: #F5F4FA;}
+
+.employers-card-title{padding-top: 30px;text-align: center;background: #FFFFFF;
+    /* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;}
+
+.our-team-box{display: flex;padding-top: 50px;padding-bottom: 94px;}
+.our-team-head{padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -124,27 +152,28 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
         color: var(--h2-h3-color);}
 
 
-    .our-team-sub-title{
+    .our-team-sub-title{padding-top: 10px;padding-bottom: 30px;
         font-size: 16px;
         line-height: 1.18;
-        /*text-align: center;*/
+        text-align: center;
         letter-spacing: 0.03em;
         color: var(--p-a-color);}
 
 
-/*.our-team-item{}*/
+
 
 
    /*============== footer ============*/
+.contact-footer{background: #2F303A;padding-top: 60px;}
 
-   .footer{background: #2F303A;}
 
+.list-footer{padding-top: 20px;padding-bottom: 60px;}
    .footer-navigation{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--on-top-color);}
 
-
+    .footer-link{padding-top: 9px;}
     .footer-mail,
     .footer-number{
     line-height: 1.71;
@@ -153,7 +182,10 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
 
     /* ============= portfolio ==============*/
 
-/*.menu-portfolio{}*/
+    .menu-portfolio-btn-list{display: flex;margin-top: 94px;margin-bottom: 50px;
+    }
+    .menu-portfolio-list{}
+.project-link{}
 .menu-portfolio-btn-link{font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -167,6 +199,20 @@ body {font-family: 'Roboto', sans-serif;line-height: 1.14;font-size: 14px;
 .menu-portfolio-btn-link:focus {
     color: var(--on-top-color);background: var(--accent-color);}
 
+.portfolio-box{display: flex;flex-wrap: wrap;margin-top: 50px;}
+
+.portfolio-titel-box{padding-top: 20px;padding-bottom: 20px;
+    background: #FFFFFF;
+    /* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;}
+
+.main-portfolio-list:not(:nth-child(3n)) {
+          margin-right: 30px;
+}
+.main-portfolio-list:not(:nth-last-child(-n+3)) {
+        margin-bottom: 30px;}
 .main-portfolio-list-title{
     font-weight: 700;
     font-size: 18px;
